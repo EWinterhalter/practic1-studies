@@ -1,0 +1,9 @@
+{
+    "library": [
+        "http://lib.ru/"
+    ],
+    "wiki": [
+        "https://ru.wikipedia.org/wiki",
+        "https://ru.wikipedia.org/wiki/HTML"
+    ]
+}

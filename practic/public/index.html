@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервер для сбора информации из интернета</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="keyword" placeholder="Введите ключевое слово">
+            <button onclick="searchUrls()">Искать</button>
+            <button onclick="clearLocalStorage()">Очистить скаченное</button>
+        </div>
+        <div class="content-container">
+            <div id="url-list" class="content-block">
+                <h3>Доступные URL</h3>
+            </div>
+            <div id="download-status" class="content-block">
+                <h3>Прогресс загрузки</h3>
+                <p id="progress"></p>
+                <progress id="progress-bar" value="0" max="10"></progress>
+            </div>
+            <div id="downloaded-content" class="content-block">
+                <h3>Скаченный контент</h3>
+            </div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>

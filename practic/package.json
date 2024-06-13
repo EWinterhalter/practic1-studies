@@ -1,0 +1,20 @@
+{
+    "name": "url-downloader",
+    "version": "1.0.0",
+    "description": "HTTP клиент и сервер для сбора информации из интернета",
+    "main": "index.js",
+    "scripts": {
+    "start": "node api/index.js"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "http": "^0.0.1-security",
+        "node-loader": "^2.0.0",
+        "puppeteer": "^22.10.1",
+        "socket.io": "^4.7.5"
+    },
+    "author": "Ellie B.",
+    "license": "ISC"
+}
